@@ -61,6 +61,63 @@ body {
     margin-bottom: 10px;
 }
 
+/* Styles for the overview section */
+.overview {
+    background-color: #f9f9f9; /* Light background color */
+    padding: 20px;            /* Add spacing inside the section */
+    border-radius: 5px;       /* Rounded corners */
+    margin-bottom: 20px;      /* Space below the section */
+    font-size: 1.1em;         /* Slightly larger text */
+    line-height: 1.6;         /* Improved readability */
+    color: #333;              /* Text color */
+}
+
+/* Styles for the research themes section */
+.research-themes {
+    background-color: #ffffff; /* White background color */
+    border: 1px solid #ddd;    /* Light border */
+    padding: 20px;             /* Add spacing */
+    border-radius: 5px;        /* Rounded corners */
+    margin-top: 20px;          /* Space above the section */
+}
+
+.research-themes h2 {
+    font-size: 1.5em;          /* Larger heading */
+    margin-bottom: 15px;       /* Space below the heading */
+    color: #222;               /* Darker text color */
+}
+
+.research-themes ul {
+    list-style-type: disc;     /* Bulleted list */
+    margin-left: 20px;         /* Indent list items */
+    line-height: 1.6;          /* Improved readability */
+}
+
+.research-themes li {
+    margin-bottom: 10px;       /* Space between list items */
+}
+
+/* Figures container */
+.figures {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Individual figure */
+.figures img {
+    width: 150px;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.figures img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
 h1 {
     color: #1a73e8;
 }
