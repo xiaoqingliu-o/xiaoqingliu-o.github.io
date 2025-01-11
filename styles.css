@@ -58,65 +58,62 @@ body {
     margin-bottom: 10px;
 }
 
-/* Styles for the overview section */
-.overview {
-    background-color: #f9f9f9; /* Light background color */
-    padding: 20px;            /* Add spacing inside the section */
-    border-radius: 5px;       /* Rounded corners */
-    margin-bottom: 20px;      /* Space below the section */
-    font-size: 1.1em;         /* Slightly larger text */
-    line-height: 1.6;         /* Improved readability */
-    color: #333;              /* Text color */
-}
 
-/* Research Themes Section */
-.research-themes {
-    margin-top: 20px;
-}
-
-.research-themes h2 {
-    text-align: center;
-    font-size: 22px;
-    margin-bottom: 20px;
-}
-
-/* Research Theme Layout */
-.theme {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-
-/* General layout for each theme */
 .content {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
-    margin-bottom: 30px;
-}
-
-/* Text section */
-.text {
     flex: 1; /* Allows text to take up available space */
 }
 
-/* Figures section */
-.figures {
-    display: flex;
-    flex-wrap: wrap; /* Handles multiple figures in a row */
-    gap: 10px;
-    max-width: 300px; /* Adjust the max width for figures */
+
+.overview {
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    text-align: center;
 }
 
-/* Individual figure */
-.figures img {
-    width: 100%; /* Adjusts width to fit container */
-    height: auto; /* Maintains aspect ratio */
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+/* Research Theme Styles */
+.research-theme {
+    margin-bottom: 3rem;
+    text-align: center;
 }
+
+.research-theme h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.research-theme p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+/* Layout for the figures in a theme */
+.theme-figures {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.theme-figures .figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Zoom effect */
+.zoomable {
+    transition: transform 0.3s;
+}
+
+.zoomable:active {
+    transform: scale(1.5);
+    z-index: 10;
+    position: relative;
+}
+
 
 
 a {
