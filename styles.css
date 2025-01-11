@@ -61,8 +61,8 @@ body {
 
 .content {
     flex: 1; /* Allows text to take up available space */
+    text-align: justify; /* Justifies the text within the content */
 }
-
 
 .overview {
     margin-bottom: 2rem;
