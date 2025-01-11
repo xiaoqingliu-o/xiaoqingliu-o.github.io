@@ -21,43 +21,4 @@ function greetUser() {
 // Call the function when the page loads
 window.onload = greetUser;
 
-document.addEventListener("DOMContentLoaded", () => {
-    const themes = [
-        {
-            id: "theme-1",
-            figures: [
-                "images/figures/NC2022.jpg",
-                "images/figures/NC2025.jpg"
-            ]
-        },
-        {
-            id: "theme-2",
-            figures: [
-                "images/figures/GCA2020.jpg",
-                "images/figures/ANNReview.jpg"
-            ]
-        },
-
-      {
-            id: "theme-3",
-            figures: [
-                "images/figures/GRL2024.jpg",
-                "images/figures/GRL2025.jpg"
-            ]
-        }
-        // Add more themes and figures as needed
-    ];
-
-    themes.forEach(theme => {
-        const themeDiv = document.getElementById(theme.id);
-        const figuresDiv = themeDiv.querySelector(".figures");
-
-        theme.figures.forEach(src => {
-            const img = document.createElement("img");
-            img.src = src;
-            img.alt = `Figure related to ${theme.id}`;
-            figuresDiv.appendChild(img);
-        });
-    });
-});
 
