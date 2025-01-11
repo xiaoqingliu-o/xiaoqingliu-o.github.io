@@ -67,13 +67,13 @@ body {
 .overview {
     margin-bottom: 2rem;
     font-size: 1rem;
-    text-align: justify;
+    text-align: left;
 }
 
 /* Research Theme Styles */
 .research-theme {
     margin-bottom: 3rem;
-    text-align: justify;
+    text-align: left;
 }
 
 .research-theme h2 {
